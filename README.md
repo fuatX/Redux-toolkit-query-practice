@@ -1,2 +1,2 @@
-step 6
-Adding the CAT API KEY info
+step 7
+Method 1: Retrieving Category Data with Fetch API
