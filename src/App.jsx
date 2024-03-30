@@ -11,6 +11,7 @@ import RTKQueryCategories from "./pages/rtk-query/RTKQueryCategories";
 function App() {
   const [count, setCount] = useState(0);
 
+  console.log(import.meta.env.VITE_API_URL);
   return (
     <>
       <Navbar />

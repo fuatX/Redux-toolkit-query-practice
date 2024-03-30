@@ -1,2 +1,4 @@
-step 3
-Adding React Router Dom and Other Pages
+step 5
+Adding the .env (Environment) Structure and Using ENV
+
+- . env folder must be created by us and it must be at the main folder(not src)
