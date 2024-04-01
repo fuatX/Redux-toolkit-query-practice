@@ -10,7 +10,6 @@ import RTKQueryCategories from "./pages/rtk-query/RTKQueryCategories";
 
 function App() {
   const [count, setCount] = useState(0);
-  console.log("VITE_CAT_API_URL", VITE_CAT_API_URL);
   return (
     <>
       <Navbar />

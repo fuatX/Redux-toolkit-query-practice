@@ -1,2 +1,2 @@
-step 7
-Method 1: Retrieving Category Data with Fetch API
+step 8
+Method 1: Editing the Category Page with Fetch API
