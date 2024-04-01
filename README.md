@@ -1,2 +1,2 @@
-step 8
-Method 1: Editing the Category Page with Fetch API
+step 9
+Method 1: Creating Fetch API Structure with customHook
