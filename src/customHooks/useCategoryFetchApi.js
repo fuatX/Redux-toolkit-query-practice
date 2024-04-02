@@ -14,7 +14,6 @@ export default function useCategoryFetchApi(categoryName) {
         "x-api-key": VITE_CAT_API_KEY,
       },
     };
-
     const response = await fetch(
       `${VITE_CAT_API_URL}/images/search?limit=10&breed_ids=${categoryName}`,
       fetchInfo
@@ -22,15 +21,13 @@ export default function useCategoryFetchApi(categoryName) {
     const responseData = await response.json();
     if (!response.ok) {
       setIsError(true);
-      setError("Veri Alinamadi...");
+      setError("Veri Alanimadi");
       throw new Error("Veri Alinamadi");
     }
-    // console.log(responseData);
     setData(responseData);
     setIsLoading(false);
   };
 
-  // useEffect(()=>{},[])
   useEffect(() => {
     getApiData();
   }, []);

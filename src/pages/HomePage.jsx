@@ -3,6 +3,5 @@ export default function HomePage() {
     <div className="col-sm-8 offset-sm-2">
       <h1>Ana Sayfa</h1>
     </div>
-    //instead of flexbox col-sm-8 offset-sm-2
-  );
+  )
 }

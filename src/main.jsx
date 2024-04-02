@@ -1,28 +1,32 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
-import "bootstrap/dist/css/bootstrap.min.css";
-import { BrowserRouter } from "react-router-dom";
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+import "bootstrap/dist/css/bootstrap.min.css"
+import { BrowserRouter } from 'react-router-dom'
+import { Provider as ReduxProvider } from 'react-redux'
+import store from './store'
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <ReduxProvider store={store}>
+        <App />
+      </ReduxProvider>
     </BrowserRouter>
-  </React.StrictMode>
-);
-/*
-TODO: Bootstrap Nav Yapisi Olusturulacak
-TODO: React Router DOM kur
-TODO: Ana Sayfa, Her Api icin Kategori Olustur.
-TODO: .env yapisi olustur ve Icıne Bilgi Ekle
-TODO: Container ve Row için Component Olustur.
+  </React.StrictMode>,
+)
+/* 
+TODO: Bootstrap Nav Yapisi Olustur
+TODO: React Router DOM'u Kur
+TODO: Ana Sayfa, Her Api icin Kategori Olustur
+TODO: .env yapisi Olustur ve Icine Bilgi Ekle
+TODO: Container ve Row icin Component Olustur..
 TODO: Cat APIdan Key Al
 TODO: Cat API Yapisini Fetch ile Kullan
-TODO: ilsLoading, isError, error ve data yapisini kurgula
-TODO: Cat API Custom Hook yap
+TODO: isLoading, isError, error ve data yapisini Kurgula
+TODO: Cat API Custom Hook Yap ;)
 TODO: Cat API Kategori Detay Sayfasi Yap
-TODO: UI Düzenle
-TODO: Axious ile Ayni Calismalari Tekrarla
-TODO: RTK Query ile Ayni Yapiyi Kurgula
+TODO: UI Duzenlemesi Yap
+TODO: Axios ile Ayni Calismalari Tekrarla
+TODO: RTK Query ile Ayni Yapiyi Kurgula..
 */
